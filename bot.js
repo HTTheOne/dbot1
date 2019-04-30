@@ -11,4 +11,10 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'jgalere') {
+    msg.reply('GALERIEN VA FOUTRE QQ CHOSE');
+  }
+});
+
 client.login('NTcyMTM2NzE3MzY1MDE4NjU1.XMdUuQ.Fe0h9Lf14sAPv8syo10xoNNZGmo');
