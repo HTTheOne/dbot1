@@ -1,3 +1,4 @@
+//Added in 1.0.0
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -10,7 +11,7 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
 });
-
+//Added in 1.0.1
 client.on('message', msg => {
   if (msg.content === 'jgalere') {
     msg.reply('GALERIEN VA FOUTRE QQ CHOSE');
