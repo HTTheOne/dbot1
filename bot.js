@@ -115,4 +115,10 @@ client.on('message', message => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'help') {
+    msg.reply('Pour le moment, je peux executer les commandes suivantes : help / mavatar / ping / jgalere / .kick / .ban / D\'autres commandes seront rajouter au fur et à mesure.');
+  }
+});
+
 client.login('NTcyMTM2NzE3MzY1MDE4NjU1.XMdUuQ.Fe0h9Lf14sAPv8syo10xoNNZGmo');
