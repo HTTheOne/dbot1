@@ -121,12 +121,7 @@ client.on('message', msg => {
   }
 });
 
-client.user.setActivity('A bot created by HT125.', { type: 'PLAYING' })
-  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
-  .catch(console.error);
-
-
-client.user.setActivity('Type help to know what this bot is capable of.', { type: 'PLAYING' })
+client.user.setActivity('A bot created by HT125.Type help to know what this bot is capable of.', { type: 'PLAYING' })
   .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
 
