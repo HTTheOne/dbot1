@@ -1,7 +1,7 @@
 {
   "name": "ht",
   "version": "1.0.1",
-  "description": "",
+  "description": "A bot created by HT125. Type help to know what this bot is capable of.",
   "main": "index.js",
   "dependencies": {
     "discord.js": "^11.4.2",
