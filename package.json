@@ -2,7 +2,7 @@
   "name": "Kun",
   "version": "1.0.1",
   "description": "A bot created by HT125. Type help to know what this bot is capable of.",
-  "main": "index.js",
+  "main": "bot.js",
   "dependencies": {
     "discord.js": "^11.4.2",
     "discord.io": "^2.5.3",
