@@ -117,12 +117,20 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'help') {
-    msg.reply('Pour le moment, je peux executer les commandes suivantes : help / mavatar / ping / jgalere / .kick / .ban / D\'autres commandes seront rajouter au fur et à mesure.');
+    msg.reply('Pour le moment, je peux executer les commandes suivantes : help / mavatar / ping / jgalere / .kick / .ban / classx / classxon / D\'autres commandes seront rajouter au fur et à mesure.');
   }
 });
 
-client.user.setActivity('A bot created by HT125.Type help to know what this bot is capable of.', { type: 'PLAYING' })
-  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
-  .catch(console.error);
+client.on('message', msg => {
+  if (msg.content === 'classx') {
+    msg.reply('Active');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'classxon') {
+    msg.reply('Desactive');
+  }
+});
 
 client.login('NTcyMTM2NzE3MzY1MDE4NjU1.XMdUuQ.Fe0h9Lf14sAPv8syo10xoNNZGmo');
