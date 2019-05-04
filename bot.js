@@ -121,16 +121,4 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
-  if (msg.content === 'classx') {
-    msg.reply('Active');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'classxon') {
-    msg.reply('Desactive');
-  }
-});
-
 client.login('NTcyMTM2NzE3MzY1MDE4NjU1.XMdUuQ.Fe0h9Lf14sAPv8syo10xoNNZGmo');
